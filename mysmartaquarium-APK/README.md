@@ -136,4 +136,4 @@ Open `UserActivity.java` and update the following constants:
 
    **Note**: If you end up creating a keystore off of the device you will need to update this to match the alias given when importing the certificate into the keystore.
 
-Build and run the sample app.
+Build and run the app.
