@@ -57,7 +57,7 @@ Thread local = Thread();
 
 //---------AWS-------------------
 AWS_IOT aq;
-char HOST_ADDRESS[] = "a3hi6rxv4kn75d.iot.us-west-2.amazonaws.com";
+char HOST_ADDRESS[] = "xxxxxxxxxxxxxxxxxxxxxxxxxxx";
 char CLIENT_ID[] = "esp32";
 char TOPIC_NAME[] = "B4E62D8C3C65";
 char SUBSCRIBE_ITEM[] = "ITEM"; 
