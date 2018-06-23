@@ -45,7 +45,7 @@ For login (Amazon Cognito):
       * __cognitoRegion__ set this to AWS Cognito Your User Pools region.
 
 
-===========================================================================================================
+					===================================================
 
 
 Managing AWS IoT (publish and subscribe topic):
