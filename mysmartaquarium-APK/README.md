@@ -45,6 +45,9 @@ For login (Amazon Cognito):
       * __cognitoRegion__ set this to AWS Cognito Your User Pools region.
 
 
+===========================================================================================================
+
+
 Managing AWS IoT (publish and subscribe topic):
 
 This sample will create a certificate and key, save it in the local java key store and upload the certificate to the AWS IoT platform.  To upload the certifiate, it requires a Cognito Identity with access to AWS IoT to upload the device certificate. Use Amazon Cognito to create a new identity pool (or you can reuse an identity pool that you previously created):
