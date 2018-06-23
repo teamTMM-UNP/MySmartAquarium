@@ -16,7 +16,7 @@ It is created for:
 
 ## How to use
 
-For login (Amazon Cognito):
+* For login (Amazon Cognito):
 
 1. Create Your user pool on the Cognito console
    - Go to https://console.aws.amazon.com/cognito/ , the console contains step-by-step instructions to create the pool.
@@ -45,10 +45,9 @@ For login (Amazon Cognito):
       * __cognitoRegion__ set this to AWS Cognito Your User Pools region.
 
 
-					===================================================
 
 
-Managing AWS IoT (publish and subscribe topic):
+* Managing AWS IoT (publish and subscribe topic):
 
 This sample will create a certificate and key, save it in the local java key store and upload the certificate to the AWS IoT platform.  To upload the certifiate, it requires a Cognito Identity with access to AWS IoT to upload the device certificate. Use Amazon Cognito to create a new identity pool (or you can reuse an identity pool that you previously created):
 	*  In the [Amazon Cognito Console](https://console.aws.amazon.com/cognito/), press the `Manage Federated Identities` button and on the resulting page press the `Create new identity pool` button.
