@@ -42,7 +42,7 @@ public class Password_Acquario extends AppCompatActivity implements View.OnClick
 
         String SSID = getIntent().getExtras().getString("ssid");
 
-        String pass = "lafessadituanonna";
+        String pass = "perfavorefunziona";
 
         WifiConfiguration conf = new WifiConfiguration();
         conf.SSID = "\"" + SSID + "\"";
