@@ -115,7 +115,7 @@ int feed = 0;
 float temp;
 float temp2;
 float temp_mean = 0.00;
-int temp_correct = 10;
+int temp_correct = 23; //Default temp, while waiting temp_mode update
 int temp_mode[40];
 int count_mode;
 bool flag_term = false;
@@ -471,25 +471,31 @@ void local_func()
       if(!flag_term){ //If don't active term by app
         
       if (temp_correct > data_aq.temp_ok+3){
-        digitalWrite(TERMOS,LOW);
-        general_err = true;
-        //YELLOW LED
-        }
-       else if ((temp_correct < data_aq.temp_ok-2) && (t < data_aq.temp_ok-2)){
-          digitalWrite(TERMOS,HIGH);
-          general_err = true;
-        }
-        else{
-          digitalWrite(TERMOS,LOW);
-          general_err = false;
-          }
-      }
-      else { //If active by app
-        if (temp_correct > data_aq.temp_ok+5){ //If temp is really high
-          digitalWrite(TERMOS,LOW);
-          general_err = true;
-          }
-        }
+	          digitalWrite(TERMOS,LOW);
+	          general_err = true;
+	          //YELLOW LED
+	          }
+	         else if ((temp_correct < data_aq.temp_ok-2) && (t < data_aq.temp_ok-2)){
+	            digitalWrite(TERMOS,HIGH);
+	            general_err = true;
+	          }
+	          else{
+	            digitalWrite(TERMOS,LOW);
+	            general_err = false;
+	            }
+	        }
+	        else { //If active by app
+	          if (temp_correct > data_aq.temp_ok+5){ //If temp is really high
+	            digitalWrite(TERMOS,LOW);
+	            general_err = true;
+	            }
+	            else if ((temp_correct < data_aq.temp_ok-2) && (t < data_aq.temp_ok-2)){
+	            general_err = true;
+	          }
+	          else{
+	            general_err = false;
+	            }
+	          }
       //----------------------- LIGHT SIDE -------------------------------------
      
       if(now.hour()>19 && now.hour()<=(data_aq.sun_time+7)){
