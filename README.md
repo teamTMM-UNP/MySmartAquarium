@@ -5,7 +5,7 @@
 
 This project aims to manage an aquarium remotely via Android app and Esp32 chip. It use AWS IoT APIs to publish to and subscribe from MQTT topics. Authentication of the connection is done with Amazon Cognito. Once a connection to the AWS IoT platform has been established, the application presents a simple UI to publish and subscribe over MQTT.
 
-To better organize the project, it is divided in two subfolder.
+To better organize the project, it is divided in two subfolders.
 
 ### Built With
 
