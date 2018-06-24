@@ -13,7 +13,7 @@ It is created for:
 ## How to install
 
   1. Download the project or clone the repository from Github.
-  2. Downolad the AWS IoT Library from (https://github.com/ExploreEmbedded/Hornbill-Examples).
+  2. Downolad the libraries used in the next chapter.
   3. Open Arduino IDE and define the below parameters in the sketch:
 
 ```
@@ -41,9 +41,6 @@ SUBSCRIBE_ITEM
 
   5. Run the sketch.
 
-## THREAD
-
-In this project, threads has been used to separate 
 
 ## Library used
 
@@ -55,6 +52,7 @@ Download the following library:
   * Adafriut https://github.com/espressif/arduino-esp32
   * Reading Thermistor - NTC 10K Analog https://playground.arduino.cc/ComponentLib/Thermistor2
   * WebServer-esp32 https://github.com/zhouhan0126/WebServer-esp32
-
+  
 
 ## Schematic
+
