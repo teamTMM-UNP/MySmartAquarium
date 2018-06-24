@@ -80,5 +80,3 @@ Version 1.0.0:
 - Add a PH sensor !
 - Possibility to know when maintenance period.
 ```
-
-
