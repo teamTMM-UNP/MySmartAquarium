@@ -12,7 +12,6 @@ It is created for:
   
 ## How to install
 
-
   1. Download the project or clone the repository from Github.
   2. Downolad the AWS IoT Library from (https://github.com/ExploreEmbedded/Hornbill-Examples).
   3. Open Arduino IDE and define the below parameters in the sketch:
@@ -41,3 +40,17 @@ SUBSCRIBE_ITEM
   This certificates allow a user to publish and subscribe a topic.
 
   5. Run the sketch.
+
+
+## Library used
+
+Download the following library:
+
+  * AWS Iot https://github.com/ExploreEmbedded/Hornbill-Examples
+  * WiFi Manager
+  * Thread
+  * ArduinoJson
+  * Adafriut
+
+
+## 
