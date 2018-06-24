@@ -143,4 +143,4 @@ Build and run the app.
 
 ## Using example
 
-![250x250](https://user-images.githubusercontent.com/39745066/41820261-3209f57a-77cf-11e8-8647-b1031e15645a.png
+![](https://user-images.githubusercontent.com/39745066/41820261-3209f57a-77cf-11e8-8647-b1031e15645a.png)
