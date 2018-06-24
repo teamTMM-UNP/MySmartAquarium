@@ -1,4 +1,4 @@
-![MySmartAquarium Logo](https://github.com/teamTMM-UNP/MySmartAquarium/blob/master/graphic/logo_small.png)
+![MySmartAquarium Logo](https://github.com/teamTMM-UNP/MySmartAquarium/blob/master/graphic/logo_medium.png)
 ![MySmartAquarium Name](https://github.com/teamTMM-UNP/MySmartAquarium/blob/master/graphic/name.png)
 
 [WebSite](http://github.com) - Not yet available.
