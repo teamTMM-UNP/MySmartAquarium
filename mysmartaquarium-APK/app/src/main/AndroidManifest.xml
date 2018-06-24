@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uniparthenope.mysmartaquarium">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/applogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.SpashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.UserActivity"
+            android:label="@string/title_activity_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.MyAccount"
+            android:label="@string/Account"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.RegisterUser"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.AboutApp"
+            android:label="@string/title_activity_about_app"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.AddAquarium"
+            android:label="Add New Aquarium"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.Acquari"
+            android:label="MyAquariums"
+            android:theme="@style/AppTheme.NoActionBarWhite"/>
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.SignUpConfirm"
+            android:label="@string/title_activity_sign_up_confirm"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.MFAActivity"
+            android:label="@string/title_activity_mfa"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.ForgotPasswordActivity"
+            android:label="@string/title_activity_forgot_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.VerifyActivity"
+            android:label="@string/title_activity_verify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.AddAttributeActivity"
+            android:label="@string/title_activity_add_attribute"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.DeviceSettings"
+            android:label="@string/title_activity_device_settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.uniparthenope.mysmartaquarium.NewPassword"
+            android:label="@string/title_activity_new_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.uniparthenope.mysmartaquarium.Wifi" />
+        <activity android:name="com.uniparthenope.mysmartaquarium.Search_WiFi" />
+        <activity android:name="com.uniparthenope.mysmartaquarium.Password_Acquario" />
+
+
+
+    </application>
+
+</manifest>

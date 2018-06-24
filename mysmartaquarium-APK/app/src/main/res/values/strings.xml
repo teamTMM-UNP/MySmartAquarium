@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">My Smart Aquarium</string>
+    <string name="app_main_screen">Sign in</string>
+    <string name="app_main_screen_title">My Smart Aquarium</string>
+    <string name="app_main_desc">An app to view and control an aquarium at home.</string>
+    <string name="nav_drawer_open">Open navigation drawer</string>
+    <string name="nav_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Menu">Menu</string>
+    <string name="Account">Account</string>
+    <string name="title_activity_about_app">AboutApp</string>
+    <string name="more_info">Developed by Ciro Giuseppe De Vita and Gennaro Mellone for an university project!</string>
+    <string name="about">Easy controlling my aquariums from anywhere in the world.</string>
+    <string name="title_activity_sign_up_confirm">SignUpConfirm</string>
+    <string name="title_activity_mfa">MFAActivity</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="title_activity_verify">VerifyActivity</string>
+    <string name="title_activity_add_attribute">AddAttributeActivity</string>
+    <string name="title_activity_device_settings">DeviceSettings</string>
+    <string name="title_activity_new_password">NewPassword</string>
+    <string name="temperature_prompt">Chose an optimal temperature (C)</string>
+    <string name="feed_prompt">Chose how many rations per day</string>
+    <string name="sun_prompt">Chose sun period (h)</string>
+
+    <string-array name="temperature">
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>33</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+    </string-array>
+    <string-array name="feed_rations">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="hours_sun">
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+</resources>
