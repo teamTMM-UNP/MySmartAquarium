@@ -58,6 +58,12 @@ Download the following library:
 
 ## Schematic
 
+## OLED Display - Symbol Explanation
+
+If a symbol appears on display, it is in active status.
+
+![Display](https://github.com/teamTMM-UNP/MySmartAquarium/blob/master/graphic/display.png)
+
 ## Version
 
 Version 1.0.0:
