@@ -143,4 +143,6 @@ Build and run the app.
 
 ## Using example
 
-<img src="![screenshot_20180624-163304](https://user-images.githubusercontent.com/39745066/41820261-3209f57a-77cf-11e8-8647-b1031e15645a.png" width="250" height="250") />
+![screenshot_20180624-163304](https://user-images.githubusercontent.com/39745066/41820261-3209f57a-77cf-11e8-8647-b1031e15645a.png
+
+<a href="url"><img src="![screenshot_20180624-163304](https://user-images.githubusercontent.com/39745066/41820261-3209f57a-77cf-11e8-8647-b1031e15645a.png" align="left" height="48" width="48" ></a>
