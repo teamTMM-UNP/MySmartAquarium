@@ -12,9 +12,10 @@ It is created for:
   
 ## How to install
 
-1. Download the project or clone the repository from Github.
-2. Downolad the AWS IoT Library from (https://github.com/ExploreEmbedded/Hornbill-Examples).
-3. Open Arduino IDE and define the below parameters in the sketch:
+
+  1. Download the project or clone the repository from Github.
+  2. Downolad the AWS IoT Library from (https://github.com/ExploreEmbedded/Hornbill-Examples).
+  3. Open Arduino IDE and define the below parameters in the sketch:
 
 ```
 HOST_ADDRESS
@@ -22,21 +23,21 @@ TOPIC_NAME
 SUBSCRIBE_ITEM
 ```
 
-HOST_ADDRESS can be find in AWS IoT console. This is APIs endpoint and it is used to estabilish a connection with MQTT server to publish and subscribe topic.
+  HOST_ADDRESS can be find in AWS IoT console. This is APIs endpoint and it is used to estabilish a connection with MQTT server to publish and subscribe topic.
 
-TOPIC_NAME is used to identify a specific aquarium, indeed when an user register an aquarium from Android app, he must insert the ID that is the same of TOPIC_NAME.
+  TOPIC_NAME is used to identify a specific aquarium, indeed when an user register an aquarium from Android app, he must insert the ID that is the same of TOPIC_NAME.
 
-SUBSCRIBE_ITEM is used to subscribe elements in AWS Iot and it is used in the Android App to send the settings and modify the state of the aquarium.
+  SUBSCRIBE_ITEM is used to subscribe elements in AWS Iot and it is used in the Android App to send the settings and modify the state of the aquarium.
 
-4. Download the below certificates from AWS Iot console:
+  4. Download the below certificates from AWS Iot console:
 
 ```
   root-CA.crt
   certificate.pem.crt
   private.pem.key
 ```
-Above certificates needs to be stored in the file aws_iot_certificates.c(AWS_IOT library) as arrays.
+  Above certificates needs to be stored in the file aws_iot_certificates.c(AWS_IOT library) as arrays.
 
-This certificates allow a user to publish and subscribe a topic.
+  This certificates allow a user to publish and subscribe a topic.
 
-5. Run the sketch.
+  5. Run the sketch.
