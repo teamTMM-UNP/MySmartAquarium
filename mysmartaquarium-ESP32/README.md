@@ -1,3 +1,5 @@
+![MySmartAquarium Logo](https://github.com/teamTMM-UNP/MySmartAquarium/blob/master/graphic/logo_small.png)
+
 ## MySmartAquarium-Arduino-ESP32
 
 This project aims to manage an aquarium remotely via Android app and Esp32 chip.
@@ -55,4 +57,28 @@ Download the following library:
   
 
 ## Schematic
+
+## Version
+
+Version 1.0.0:
+
+* First relase
+
+## Knowed Issues & Future Implementations
+
+* Issues:
+
+```
+- When can't subscribe to a topic, AWS library retry to connect every time holding all the resources of ESP32.
+```
+
+* Ideas for next release:
+```
+- Add a correct SetTime for RTC time.
+- Switch Celsius\Fahrenheit
+- Change background colour.
+- Add a PH sensor !
+- Possibility to know when maintenance period.
+```
+
 
