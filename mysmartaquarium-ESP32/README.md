@@ -47,10 +47,11 @@ SUBSCRIBE_ITEM
 Download the following library:
 
   * AWS Iot https://github.com/ExploreEmbedded/Hornbill-Examples
-  * WiFi Manager
-  * Thread
-  * ArduinoJson
-  * Adafriut
+  * Thread https://github.com/ivanseidel/ArduinoThread
+  * ArduinoJson https://github.com/bblanchon/ArduinoJson
+  * Adafriut https://github.com/espressif/arduino-esp32
+  * Reading Thermistor - NTC 10K Analog https://playground.arduino.cc/ComponentLib/Thermistor2
+  * WebServer-esp32 https://github.com/zhouhan0126/WebServer-esp32
 
 
-## 
+## Schematic
