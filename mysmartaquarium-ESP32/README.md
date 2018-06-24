@@ -41,6 +41,9 @@ SUBSCRIBE_ITEM
 
   5. Run the sketch.
 
+## THREAD
+
+In this project, threads has been used to separate 
 
 ## Library used
 
