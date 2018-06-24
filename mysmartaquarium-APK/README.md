@@ -1,3 +1,5 @@
+![MySmartAquarium Logo](https://github.com/teamTMM-UNP/MySmartAquarium/blob/master/graphic/logo_small.png)
+
 ## My Smart Aquarium-APK (Android)
 
 This project aims to manage an aquarium remotely via Android app and Esp32 chip.
@@ -140,7 +142,24 @@ Open `UserActivity.java` and update the following constants:
 
 Build and run the app.
 
+## Version
 
-## Using example
+Version 1.0.0:
 
-![screenshot_20180624-163304|512x397,20%](https://user-images.githubusercontent.com/39745066/41820261-3209f57a-77cf-11e8-8647-b1031e15645a.png)
+* First relase
+
+## Knowed Issues & Future Implementations
+
+* Issues:
+
+```
+N/A
+```
+
+* Ideas for next release:
+```
+- Possibility to rename an aquarium.
+- QR code to pair devices.
+- Change backlight colour from app.
+```
+
