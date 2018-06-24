@@ -143,3 +143,4 @@ Build and run the app.
 
 ## Using example
 
+![screenshot_20180624-163304](https://user-images.githubusercontent.com/39745066/41820261-3209f57a-77cf-11e8-8647-b1031e15645a.png)
