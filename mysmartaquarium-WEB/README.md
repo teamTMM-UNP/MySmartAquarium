@@ -66,4 +66,5 @@ It is created for:
   $ flask run -h 0.0.0.0
   ~~~
   
+  Now the app is running on local server (http://127.0.0.1:5000/login)
   
