@@ -9,7 +9,7 @@ It is created for:
   - Learning to work with Arduino, particularly ESP32 chip
   - Developing a project for UniParthenope (in specific for mobile computing exam)
   
-  # Installation (FLASK)
+  # Installation
   
   ### First of all, clone the repository and create a virtual environment
   ~~~sh
