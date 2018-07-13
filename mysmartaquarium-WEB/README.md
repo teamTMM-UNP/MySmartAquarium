@@ -9,7 +9,7 @@ It is created for:
   - Learning to work with Arduino, particularly ESP32 chip
   - Developing a project for UniParthenope (in specific for mobile computing exam)
   
-  # Installation
+  # Installation (FLASK)
   
   ### First of all, clone the repository and create a virtual environment
   ~~~sh
@@ -29,6 +29,36 @@ It is created for:
   $ flask db init
   $ flask db migrate
   $ flask db upgrade
+  ~~~
+  
+  
+  ### Installation (AWS-SDK-JS)
+  **NOTE:** AWS IoT SDK will only support Node version 4 or above.
+  
+  You can check your node version by 
+  ~~~sh
+  node -v
+  ~~~
+  
+  Install Aws-sdk-iot-device from github:
+  ~~~sh
+  $ git clone https://github.com/aws/aws-iot-device-sdk-js.git
+  $ cd aws-iot-device-js
+  $ npm install
+  ~~~
+  
+  Copy all files from 'aws-iot-device-js' to 'MySmartAquarium/mysmartaquarium-WEB'.
+  
+  Modify the file aws-configuration.js with your AWS credentials.
+  
+  Install broswerify:
+  ~~~sh
+  $ npm install broswerify
+  ~~~
+  
+  And run the following command:
+  ~~~sh
+  $ npm run-script browserize app/static/js/js/index.js
   ~~~
   
   ### Run server
