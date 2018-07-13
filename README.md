@@ -1,8 +1,6 @@
 ![MySmartAquarium Logo](https://github.com/teamTMM-UNP/MySmartAquarium/blob/master/graphic/logo_medium.png)
 ![MySmartAquarium Name](https://github.com/teamTMM-UNP/MySmartAquarium/blob/master/graphic/name.png)
 
-[WebSite](http://github.com) - Not yet available.
-
 This project aims to manage an aquarium remotely via Android app and Esp32 chip. It use AWS IoT APIs to publish to and subscribe from MQTT topics. Authentication of the connection is done with Amazon Cognito. Once a connection to the AWS IoT platform has been established, the application presents a simple UI to publish and subscribe over MQTT.
 
 To better organize the project, it is divided in two subfolders.
@@ -31,6 +29,10 @@ Project and full documentation can be found at:
 With this app it is possible to handle aquariums remotely, just by using an Android device.
 
 [MySmartAquarium-APK](https://github.com/teamTMM-UNP/MySmartAquarium/tree/master/mysmartaquarium-APK)
+
+### MySmartAquarium - WebSite
+
+With the website it is possible to handle aquariums remotely, just by using a browser.
 
 ### Authors
 
