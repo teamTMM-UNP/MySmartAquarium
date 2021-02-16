@@ -1,0 +1,93 @@
+// Struct DATA 	data_aq{
+
+    char tsid[50];
+    char tpass[50];
+    bool IS_SETUP;
+    
+    int temp_ok;
+    int sun_time;
+    int feed_tot;
+    int feed_rem;
+    int actual_day;
+	}
+
+
+// --------------------- LOCAL Func -----------------------------------------
+void local_func()
+{
+  DateTime now = rtc.now();
+  int total_hours = 7 + data_aq.sun_time;
+  int mean_hours0 = (total_hours + data_aq.sun_time)\2; //MIDDLE FOOD
+  int mean_hours1 = (7+mean_hours0)/2; //Morning FOOD
+  int mean_hours2 = (total_hours+mean_hours0)/2; //Evening FOOD
+
+  int x = 3; //
+  
+  live_scan();//Scan for sensors
+  normal_screen(temp_mean); //Print on Display
+
+  
+// ------------------- GENERAL SIDE ------------------------------
+  if(now.day()!=data_aq.actual_day){//If the day is done 
+
+    data_aq.feed_rem = data_aq.feed_tot; //Refull feed counter
+    data_aq.actual_day = now.day();//Change day
+    EEPROM_SAVE();
+    } 
+    
+    else {
+ //---------------------- FOOD SIDE ------------------------
+
+      
+    if (feed_tot == 1){
+      if((mean_hours0 == now.hour()) && data_aq.feed_rem == 1){ //If is time and not feed yet, feed!
+        
+        digitalWrite(FEED,HIGH);
+        delay(50);              // FEEDING
+        digitalWrite(FEED,LOW);
+
+        data_aq.feed_rem = data_aq.feed_rem - 1;
+        EEPROM_SAVE(); //Save data for eventual crashes.
+        }
+      }
+
+      if (feed_tot == 2){
+
+        if(((mean_hours1 == now.hour()) || (mean_hours2 == now.hour())) && data_aq.feed_rem > 0){ //If is time and not feed yet, feed!
+        digitalWrite(FEED,HIGH);
+        delay(50);              // FEEDING
+        digitalWrite(FEED,LOW);
+
+        data_aq.feed_rem = data_aq.feed_rem - 1;
+        EEPROM_SAVE(); //Save data for eventual crashes.
+        }
+      }
+
+      if (feed_tot == 3){
+
+        if (((mean_hours1 == now.hour()) || (mean_hours2 == now.hour()) || (mean_hours0 == now.hour())) && data_aq.feed_rem > 0){ //If is time and not feed yet, feed!
+        digitalWrite(FEED,HIGH);
+        delay(50);              // FEEDING
+        digitalWrite(FEED,LOW);
+
+        data_aq.feed_rem = data_aq.feed_rem - 1;
+        EEPROM_SAVE(); //Save data for eventual crashes.
+        }
+       if (feed_tot > 3) general_err = true; // If others, error!
+      }
+    // --------------------------- TEMPERATURE SIDE ---------------------------
+      
+      if (temp_mean > data_aq.temp_ok + x)
+
+    
+    }
+
+  
+  //DATA OK
+  Serial.print(now.hour(), DEC);
+    Serial.print(':');
+    Serial.print(now.minute(), DEC);
+    Serial.print(':');
+    Serial.print(now.second(), DEC);
+    Serial.println();
+}
